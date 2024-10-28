@@ -1,0 +1,265 @@
+* {
+  font-family: montserrat;
+}
+/* Background Video */
+video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  transform: translateX(-50%) translateY(-50%);
+  object-fit: cover;
+}
+
+/* Navbar */
+.navbar-nav a {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.nav-link:hover {
+  font-weight: bold;
+}
+.navbar-light .navbar-brand {
+  color: #000;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.navbar-light .navbar-brand span {
+  color: #ff7f50;
+}
+.w-100 {
+  height: 100vh;
+}
+.navbar-toggler {
+  padding: 1px 5px;
+  font-size: 18px;
+  line-height: 0.3;
+  background: #fff;
+}
+.navbar .appbtn {
+  background: #ff7f50;
+  margin-left: 30px;
+  border-radius: 4px;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  line-height: 2.3;
+}
+.navbar .appbtn:hover {
+  background-color: #e06a3e;
+  color: #000;
+}
+
+/* Carousel */
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+}
+.carousel-caption {
+  bottom: 220px;
+  z-index: 2;
+}
+.carousel-caption h5 {
+  font-size: 45px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 25px;
+}
+.carousel-caption p {
+  width: 60%;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.8;
+}
+.carousel-caption a {
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #ff7f50;
+  padding: 5px 20px;
+  display: inline-block;
+  color: #fff;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+.carousel-caption a:hover {
+  background-color: #e06a3e;
+  color: #000;
+}
+.carousel-inner:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+/* About */
+.about-section {
+  padding: 100px 0;
+}
+.about-title {
+  color: #502314;
+  font-weight: bold;
+  font-size: 40px;
+}
+.btn-learn-more {
+  background-color: #ff7f50;
+  color: white;
+  border: none;
+  margin-bottom: 20px;
+}
+.btn-learn-more:hover {
+  background-color: #e06a3e;
+}
+#about {
+  scroll-margin-top: 40px;
+}
+
+/* Product */
+.product-title .nav-link {
+  color: #000;
+}
+.product-title .nav-link:hover {
+  color: #e06a3e;
+}
+#product {
+  scroll-margin-top: 90px;
+}
+
+/* Contact */
+.contact-section {
+  padding-top: 10%;
+  margin-bottom: 80px;
+}
+.row.single-form {
+  box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 0.5);
+}
+.left {
+  background-color: #ff7f50;
+  padding: 155px 50px;
+}
+.left h2 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 48px;
+}
+.left h2 span {
+  font-weight: 100;
+}
+.single-form {
+  background: #fff;
+}
+.right {
+  padding: 90px 50px;
+  position: relative;
+}
+.right i {
+  position: absolute;
+  font-size: 80px;
+  left: -27px;
+  top: 40%;
+  color: #fff;
+}
+.form-control {
+  border: 2px solid #000;
+}
+.right button {
+  border: none;
+  border-radius: 0;
+  background: #ff7f50;
+  width: 180px;
+  color: #fff;
+  padding: 15px 0;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.right button:hover {
+  background-color: #e06a3e;
+  color: #000;
+}
+#product {
+  scroll-margin-top: 80px;
+}
+
+/* Footer */
+.footer-section {
+  background-color: #ff7f50;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #ccc;
+  padding-left: 10px;
+}
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media only screen and (max-width: 767px) {
+  .navbar-nav {
+    text-align: center;
+  }
+  .carousel-caption {
+    bottom: 165px;
+  }
+  .carousel-caption h5 {
+    font-size: 16px;
+  }
+  .carousel-caption a {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+  .navbar .appbtn {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .right i {
+    top: -52px;
+    transform: rotate(90deg);
+    left: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .left {
+    padding: 90px 15px;
+    text-align: center;
+  }
+  .left h2 {
+    font-size: 25px;
+  }
+  .right {
+    padding: 25px;
+  }
+  .right i {
+    top: -52px;
+    transform: rotate(90deg);
+    left: 46%;
+  }
+  .right button {
+    width: 150px;
+    padding: 12px 0;
+  }
+}
